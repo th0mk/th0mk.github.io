@@ -22,31 +22,29 @@
         @font-face {
             font-family: "roboto";
             src: url("fonts/RobotoSlab-Regular.ttf");
+            font-display: swap;
         }
 
         body {
             font-family: "roboto";
-            height: 100vh;
+            height: 90vh;
             margin: 0;
             display: grid;
             place-items: center;
             align-items: center;
+            padding-left: 16px;
+            padding-right: 16px;
         }
 
-        .main {
-            height: 20vh;
-            place-items: center;
-            align-items: center;
-        }
 
         @media (prefers-color-scheme: light) {
-            body {
+            body, a {
                 color: #555;
             }
         }
 
         @media (prefers-color-scheme: dark) {
-            body {
+            body, a {
                 background-color: black;
                 color: #ddd;
             }
@@ -55,7 +53,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <div>
         <h1>Thom Kaptein</h1>
         <h2>Back end developer</h2>
         <br>
